@@ -5,7 +5,9 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none;
+}
 .navbar {
   background: #131313;
   height: 80px;
@@ -163,6 +165,7 @@
     width: 80%;
     height: 80px;
     margin: 0;
+    border-radius: 20px;
   }
 
   #mobile-menu {
@@ -189,7 +192,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
+ 
 /* Hero Section */
 .hero {
   background: #712525;
@@ -244,8 +247,8 @@
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0eff4e,
-    #22ffb5
+    #ffffff,
+    #e5fff6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -496,12 +499,12 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .services__card {
-  margin: 10px;
+  margin: 20px;
   height: 425px;
   width: 300px;
   border-radius: 4px;
