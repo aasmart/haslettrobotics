@@ -109,7 +109,6 @@ a {
 
 @media screen and (max-width: 960px) {
   .navbar__container {
-    display: flex;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
@@ -390,7 +389,6 @@ a {
   height: 100%;
   background: #6C2BFF;
   transition: all 0.35s;
-  border-radius: 4px;
 }
 
 .main__btn:hover {
@@ -425,7 +423,7 @@ a {
 #card-2 {
   background: #3868FF;
   background: -webkit-linear-gradient(to right, #3873FF, #3868FF);
-  background: linear-gradient(to right, #3873FF, #3868FF);
+  background: linear-gradient(-45deg, #3873FF, #3868FF);
 }
 
 /* Mobile Responsive */
@@ -542,16 +540,22 @@ a {
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background: #2BCCFF;
+  background-color: #2BCCFF;
+  background-image: -webkit-linear-gradient(135deg, #2BCCFF, #2787E8);
+  background-image: linear-gradient(135deg, #2BCCFF, #2787E8);
   transition: 0.3s ease-in;
 }
 
 .services__card:nth-child(2) {
-  background: #2787E8;
+  background-color: #2787E8;
+  background-image: -webkit-linear-gradient(135deg, #2787E8, #3868FF);
+  background-image: linear-gradient(135deg, #2787E8, #3868FF);
 }
 
 .services__card:nth-child(3) {
-  background: #3868FF;
+  background-color: #3868FF;
+  background-image: -webkit-linear-gradient(135deg, #3868FF, #2D27E8);
+  background-image: linear-gradient(135deg, #3868FF, #2D27E8);
 }
 
 .services__card h2 {
@@ -591,7 +595,7 @@ a {
 
 .services__card:hover {
   transform: scale(1.05);
-  filter: brightness(120%);
+  filter: brightness(110%);
   transition: 0.2s ease-in;
   cursor: pointer;
 }
