@@ -5,9 +5,11 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
 }
+
 .navbar {
   background: #131313;
   height: 80px;
@@ -32,11 +34,12 @@ a {
 }
 
 #navbar__logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffc5b3 100%);
+  background-color: #3868FF;
+  background-image: linear-gradient(to top, #3868FF 0%, #3873FF 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   display: flex;
@@ -44,6 +47,8 @@ a {
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
 }
 
 .navbar__menu {
@@ -54,6 +59,8 @@ a {
 
 .navbar__item {
   height: 80px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
 }
 
 .navbar__links {
@@ -86,15 +93,17 @@ a {
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #3868FF;
+  background: -webkit-linear-gradient(to right, #3873FF, #3868FF);
+  background: linear-gradient(to right, #3873FF, #3868FF);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #9518fc;
+  color: #6C2BFF;
   transition: all 0.3s ease;
 }
 
@@ -195,8 +204,8 @@ a {
  
 /* Hero Section */
 .hero {
-  background: #712525;
-  background: linear-gradient(to right, #f39200ce, #5500ffdf);
+  background: #6C2BFF;
+  background: linear-gradient(to right, #153AB3, #6C2BFF);
   padding: 200px 0;
 }
 
@@ -214,36 +223,32 @@ a {
 
 .hero__heading {
   font-size: 100px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
   margin-bottom: 24px;
   color: #fff;
 }
 
 .hero__heading span {
-  background: #ee0979; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-weight: 800;
+  background: #2BCCFF;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -mo-text-fill-color: transparent;
 }
 
 .hero__description {
   font-size: 60px;
-  background: #da22ff; /* fallback for old browsers */
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  background: #ffffff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #9114ff,
-    #da22ff
+    #ffffff,
+    #e5fff6
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
@@ -253,12 +258,13 @@ a {
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
 .highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
+  border-bottom: 4px solid #6C2BFF;
 }
 
 @media screen and (max-width: 768px) {
@@ -297,17 +303,21 @@ a {
 
 .main__content h1 {
   font-size: 2rem;
-  background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  background-color: #3868FF;
+  background-image: linear-gradient(to top, #3868FF 0%, #3873FF 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
 
+/* UNUSED AT THE MOMENT */
 .main__content h2 {
   font-size: 4rem;
   background: #ff8177; /* fallback for old browsers */
@@ -324,6 +334,7 @@ a {
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -331,14 +342,28 @@ a {
 .main__content p {
   margin-top: 1rem;
   font-size: 2rem;
-  font-weight: 700;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400
+}
+
+.main__content span {
+  font-weight: 800;
+  background: #2BCCFF;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
 }
 
 .main__btn {
   font-size: 1.8rem;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  background: #3868FF;
+  background: -webkit-linear-gradient(to right, #3873FF, #3868FF);
+  background: linear-gradient(to right, #3873FF, #3868FF);
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -363,7 +388,7 @@ a {
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #6C2BFF;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -389,7 +414,7 @@ a {
   flex-direction: column;
   justify-content: center;
   color: #fff;
-background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .fa-layer-group,
@@ -398,9 +423,9 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 #card-2 {
-  background: #ff512f;
-  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-  background: linear-gradient(to right, #dd2476, #ff512f);
+  background: #3868FF;
+  background: -webkit-linear-gradient(to right, #3873FF, #3868FF);
+  background: linear-gradient(to right, #3873FF, #3868FF);
 }
 
 /* Mobile Responsive */
@@ -486,11 +511,14 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  background-color: #3868FF;
+  background-image: linear-gradient(to top, #3868FF 0%, #3873FF 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
@@ -504,6 +532,8 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .services__card {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
   margin: 20px;
   height: 425px;
   width: 300px;
@@ -512,41 +542,27 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background: #2BCCFF;
   transition: 0.3s ease-in;
 }
 
 .services__card:nth-child(2) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #d9c0ff,
-    #12d8fa,
-    #1fa2ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #00f968,
-    #12d8fa,
-    #1fa2ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2787E8; /* fallback for old browsers */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .services__card:nth-child(3) {
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  background: #3868FF;
 }
 
 .services__card h2 {
+  font-family: 'Kanit', sans-serif;
   text-align: center;
 }
 
 .services__card p {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
@@ -566,6 +582,8 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   border-radius: 4px;
   background: #131313;
   font-size: 1rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
 }
 
 .services__card button:hover {
@@ -573,8 +591,9 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .services__card:hover {
-  transform: scale(1.075);
-  transition: 0.3s ease-in;
+  transform: scale(1.05);
+  filter: brightness(120%);
+  transition: 0.2s ease-in;
   cursor: pointer;
 }
 
@@ -592,6 +611,8 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 
 /* Footer CSS */
 .footer__container {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
   background-color: #131313;
   padding: 5rem 0;
   display: flex;
@@ -610,6 +631,7 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .footer__links {
+  font-weight: 400;
   width: 100%;
   max-width: 1000px;
   display: flex;
@@ -674,6 +696,7 @@ background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .website__rights {
+  font-weight: 400;
   color: #fff;
 }
 
