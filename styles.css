@@ -547,8 +547,7 @@ a {
 }
 
 .services__card:nth-child(2) {
-  background: #2787E8; /* fallback for old browsers */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2787E8;
 }
 
 .services__card:nth-child(3) {
